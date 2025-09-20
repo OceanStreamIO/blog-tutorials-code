@@ -17,7 +17,6 @@ ds = xr.Dataset(
 ds_chunked = ds.chunk({"time": 300, "range_bin": 256})
 
 # Write to a Zarr store (could be local or remote object store like S3)
-# out = "s3://bucket/path/sonar_scan.zarr"  # or local path
 #out = "sonar_scan.zarr"
 
 ds_chunked.to_zarr("s3://xarray-zarr-demo/sonar_scan.zarr",
@@ -26,5 +25,4 @@ ds_chunked.to_zarr("s3://xarray-zarr-demo/sonar_scan.zarr",
            zarr_format=2)
 
 ds2 = xr.open_zarr("s3://xarray-zarr-demo/sonar_scan.zarr")
-ds2
-# https://noaa-wcsd-pds.s3.amazonaws.com/index.html#data/raw/Henry_B._Bigelow/HB1907/EK60/:~:text=D20190726%2DT080223.raw
+print(ds2)
