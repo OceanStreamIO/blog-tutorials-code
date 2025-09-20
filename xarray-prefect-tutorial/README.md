@@ -1,4 +1,4 @@
-## Cloud-Native Ocean Data Processing — Essentials
+## Cloud-Native Ocean Data Processing
 
 This repository contains code accompanying a long-form tutorial on our OceanStream blog about building a cloud-native stack for scientific data processing (focused on water columns sonar data) using xarray, Zarr, Dask, echopype, and Prefect 3.
 
@@ -12,7 +12,7 @@ Tools: [xarray](https://docs.xarray.dev/), [Zarr](https://zarr.readthedocs.io/),
 pip install xarray zarr dask distributed s3fs
 python xarray_example.py
 ```
-+- Run (notebook via JupyterLab):
+- Run (notebook via JupyterLab):
 ```bash
 pip install jupyterlab xarray zarr dask distributed s3fs
 jupyter lab xarray_example.ipynb
