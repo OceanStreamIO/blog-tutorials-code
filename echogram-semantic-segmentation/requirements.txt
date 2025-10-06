@@ -1,0 +1,28 @@
+# Core deep learning
+torch
+torchvision
+pytorch-lightning
+segmentation-models-pytorch
+torchmetrics
+
+# Data handling / science
+pandas
+numpy
+scikit-learn
+xarray
+zarr
+dask
+
+# Echogram / domain specific
+echoregions
+
+# Image & visualization
+opencv-python
+matplotlib
+seaborn
+
+# Utilities
+tqdm
+
+# Notebook interface
+jupyterlab
